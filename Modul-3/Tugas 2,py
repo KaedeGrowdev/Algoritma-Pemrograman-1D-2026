@@ -1,0 +1,16 @@
+n = int(input("Tinggi setengah Menara (2-15)"))
+while n < 2 or n > 15:
+    print("Tidak Valid, Masukkan angka 2-15")
+    n = int(input("Tinggi setengah menara (2-15): "))
+
+lebar = 2 * n - 1
+baris_list = list(range(1, n + 1)) + list(range(n - 1, 0, -1))
+
+for i in baris_list:
+    s = ""
+    for k in range(1, i + 1):
+        s += str(k % 10)
+    for k in range(i - 1, 0, -1):
+        s += str(k % 10)
+    print(s.center(lebar))
+    
