@@ -1,6 +1,6 @@
 n = int(input("Tinggi setengah Menara (2-15)"))
 while n < 2 or n > 15:
-    print("Tidak Valid, Masukkan angka 2-15")
+    print("Tidak Valid,  Masukkan angka 2-15")
     n = int(input("Tinggi setengah menara (2-15): "))
 
 lebar = 2 * n - 1
